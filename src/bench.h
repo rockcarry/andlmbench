@@ -50,7 +50,16 @@ typedef unsigned char bool_t;
 #include	<rpc/pmap_clnt.h>
 #endif
 
+#include 	<string.h>
 #include 	<stdarg.h>
+
+#ifdef ANDROID
+inline void* valloc(size_t size)
+{
+    return memalign(getpagesize(), size);
+}
+#endif
+
 #ifndef HAVE_uint
 typedef unsigned int uint;
 #endif
