@@ -69,6 +69,7 @@ rusage(void)
 void
 lmbench_usage(int argc, char *argv[], char* usage)
 {
+	(void)argc;
 	fprintf(stderr,"Usage: %s %s", argv[0], usage);
 	exit(-1);
 }
@@ -77,6 +78,7 @@ lmbench_usage(int argc, char *argv[], char* usage)
 void
 sigchld_wait_handler(int signo)
 {
+	(void)signo;
 	wait(0);
 	signal(SIGCHLD, sigchld_wait_handler);
 }
@@ -92,12 +94,14 @@ void (*benchmp_sigalrm_handler)(int);
 void
 benchmp_sigterm(int signo)
 {
+	(void)signo;
 	benchmp_sigterm_received = 1;
 }
 
 void
 benchmp_sigchld(int signo)
 {
+	(void)signo;
 	signal(SIGCHLD, SIG_DFL);
 	benchmp_sigchld_received = 1;
 #ifdef _DEBUG
@@ -108,6 +112,7 @@ benchmp_sigchld(int signo)
 void
 benchmp_sigalrm(int signo)
 {
+	(void)signo;
 	signal(SIGALRM, SIG_IGN);
 	kill(benchmp_sigalrm_pid, SIGTERM);
 	/* 
@@ -343,6 +348,7 @@ benchmp_parent(	int response,
 	fd_set		fds_read, fds_error;
 	struct timeval	timeout;
 
+	(void)iterations, (void)enough;
 	if (benchmp_sigchld_received || benchmp_sigterm_received) {
 #ifdef _DEBUG
 		fprintf(stderr, "benchmp_parent: entering, benchmp_sigchld_received=%d\n", benchmp_sigchld_received);
@@ -546,6 +552,7 @@ benchmp_childid()
 void
 benchmp_child_sigchld(int signo)
 {
+	(void)signo;
 #ifdef _DEBUG
 	fprintf(stderr, "benchmp_child_sigchld handler\n");
 #endif
@@ -559,6 +566,7 @@ benchmp_child_sigchld(int signo)
 void
 benchmp_child_sigterm(int signo)
 {
+	(void)signo;
 	signal(SIGTERM, SIG_IGN);
 	if (_benchmp_child_state.cleanup) {
 		void (*sig)(int) = signal(SIGCHLD, SIG_DFL);

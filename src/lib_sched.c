@@ -180,6 +180,7 @@ sched_pin(int cpu)
 {
 	int retval = -1;
 
+	(void)cpu;
 #ifdef HAVE_SYSMP
 	/* SGI IRIX interface */
 	retval = sysmp(MP_MUSTRUN, cpu);

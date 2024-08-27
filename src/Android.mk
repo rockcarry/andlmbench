@@ -28,7 +28,7 @@ ifneq ($(ANDROID_LMBENCH),true)
 endif
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lmbench_lib
 
 include $(BUILD_STATIC_LIBRARY)
@@ -42,7 +42,7 @@ LOCAL_SRC_FILES:= mhz.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := mhz
 
 include $(BUILD_EXECUTABLE)
@@ -56,7 +56,7 @@ LOCAL_SRC_FILES:= bw_file_rd.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := bw_file_rd
 
 include $(BUILD_EXECUTABLE)
@@ -70,7 +70,7 @@ LOCAL_SRC_FILES:= bw_mem.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := bw_mem
 
 include $(BUILD_EXECUTABLE)
@@ -84,7 +84,7 @@ LOCAL_SRC_FILES:= bw_mmap_rd.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := bw_mmap_rd
 
 include $(BUILD_EXECUTABLE)
@@ -98,7 +98,7 @@ LOCAL_SRC_FILES:= bw_pipe.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := bw_pipe
 
 include $(BUILD_EXECUTABLE)
@@ -113,7 +113,7 @@ LOCAL_SRC_FILES:= bw_tcp.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := bw_tcp
 
 include $(BUILD_EXECUTABLE)
@@ -128,7 +128,7 @@ LOCAL_SRC_FILES:= bw_unix.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := bw_unix
 
 include $(BUILD_EXECUTABLE)
@@ -142,7 +142,7 @@ LOCAL_SRC_FILES:= lat_cmd.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_cmd
 
 include $(BUILD_EXECUTABLE)
@@ -157,7 +157,7 @@ LOCAL_SRC_FILES:= lat_connect.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_connect
 
 include $(BUILD_EXECUTABLE)
@@ -172,7 +172,7 @@ LOCAL_SRC_FILES:= lat_ctx.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_ctx
 
 include $(BUILD_EXECUTABLE)
@@ -186,7 +186,7 @@ LOCAL_SRC_FILES:= lat_fcntl.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_fcntl
 
 include $(BUILD_EXECUTABLE)
@@ -200,7 +200,7 @@ LOCAL_SRC_FILES:= lat_fs.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_fs
 
 include $(BUILD_EXECUTABLE)
@@ -214,7 +214,7 @@ LOCAL_SRC_FILES:= lat_mem_rd.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_mem_rd
 
 include $(BUILD_EXECUTABLE)
@@ -228,7 +228,7 @@ LOCAL_SRC_FILES:= lat_mmap.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_mmap
 
 include $(BUILD_EXECUTABLE)
@@ -242,7 +242,7 @@ LOCAL_SRC_FILES:= lat_ops.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_ops
 
 include $(BUILD_EXECUTABLE)
@@ -256,7 +256,7 @@ LOCAL_SRC_FILES:= lat_pipe.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_pipe
 
 include $(BUILD_EXECUTABLE)
@@ -270,7 +270,7 @@ LOCAL_SRC_FILES:= lat_pagefault.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_pagefault
 
 include $(BUILD_EXECUTABLE)
@@ -284,7 +284,7 @@ LOCAL_SRC_FILES:= lat_proc.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_proc
 
 include $(BUILD_EXECUTABLE)
@@ -298,7 +298,7 @@ LOCAL_SRC_FILES:= lat_rand.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_rand
 
 include $(BUILD_EXECUTABLE)
@@ -313,7 +313,7 @@ LOCAL_SRC_FILES:= lat_tcp.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_tcp
 
 include $(BUILD_EXECUTABLE)
@@ -329,7 +329,7 @@ LOCAL_SRC_FILES:= lat_sem.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_sem
 
 include $(BUILD_EXECUTABLE)
@@ -344,7 +344,7 @@ LOCAL_SRC_FILES:= lat_sig.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_sig
 
 include $(BUILD_EXECUTABLE)
@@ -358,7 +358,7 @@ LOCAL_SRC_FILES:= lat_syscall.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_syscall
 
 include $(BUILD_EXECUTABLE)
@@ -373,7 +373,7 @@ LOCAL_SRC_FILES:= lat_udp.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_udp
 
 include $(BUILD_EXECUTABLE)
@@ -388,7 +388,7 @@ LOCAL_SRC_FILES:= lat_unix.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_unix
 
 include $(BUILD_EXECUTABLE)
@@ -402,7 +402,7 @@ LOCAL_SRC_FILES:= lat_usleep.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags) -DTRUE=1 -DFALSE=0
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_usleep
 
 include $(BUILD_EXECUTABLE)
@@ -416,7 +416,7 @@ LOCAL_SRC_FILES:= cache.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := cache
 
 include $(BUILD_EXECUTABLE)
@@ -430,7 +430,7 @@ LOCAL_SRC_FILES:= line.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := line
 
 include $(BUILD_EXECUTABLE)
@@ -444,7 +444,7 @@ LOCAL_SRC_FILES:= lmdd.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lmdd
 
 include $(BUILD_EXECUTABLE)
@@ -458,7 +458,7 @@ LOCAL_SRC_FILES:= tlb.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := tlb
 
 include $(BUILD_EXECUTABLE)
@@ -472,7 +472,7 @@ LOCAL_SRC_FILES:= stream.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lmstream
 
 include $(BUILD_EXECUTABLE)
@@ -486,7 +486,7 @@ LOCAL_SRC_FILES:= memsize.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := memsize
 
 include $(BUILD_EXECUTABLE)
@@ -501,7 +501,7 @@ LOCAL_SRC_FILES:= lat_select.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_select
 
 include $(BUILD_EXECUTABLE)
@@ -516,7 +516,7 @@ LOCAL_SRC_FILES:= lat_unix_connect.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_unix_connect
 
 include $(BUILD_EXECUTABLE)
@@ -530,7 +530,7 @@ LOCAL_SRC_FILES:= lat_fifo.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_fifo
 
 include $(BUILD_EXECUTABLE)
@@ -545,7 +545,7 @@ LOCAL_SRC_FILES:= lat_http.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := lat_http
 
 include $(BUILD_EXECUTABLE)
@@ -560,7 +560,7 @@ LOCAL_SRC_FILES:= par_mem.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := par_mem
 
 include $(BUILD_EXECUTABLE)
@@ -574,7 +574,7 @@ LOCAL_SRC_FILES:= par_ops.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := par_ops
 
 include $(BUILD_EXECUTABLE)
@@ -588,7 +588,7 @@ LOCAL_SRC_FILES:= enough.c
 LOCAL_STATIC_LIBRARIES := $(COMMON_LIBS)
 LOCAL_C_INCLUDES := $(common_target_c_includes)
 LOCAL_CFLAGS := $(COMMON_CFLAGS) $(common_target_cflags)
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := enough
 
 include $(BUILD_EXECUTABLE)

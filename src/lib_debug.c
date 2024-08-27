@@ -112,6 +112,7 @@ print_mem(char* addr, size_t size, size_t line)
 			(unsigned long)((off % pagesize) / line),
 			(unsigned long)((off % line) / sizeof(char*)));
 	}
+	(void)size;
 }
 
 void
